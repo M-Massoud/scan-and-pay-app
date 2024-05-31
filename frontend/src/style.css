@@ -28,3 +28,28 @@ body {
 .page-container {
   padding: 45px 90px;
 }
+
+.page-inner-content {
+  padding: 3.75rem 2.5rem 2.875rem 2.5rem;
+  border: 3px solid var(--main-grey-color);
+  border-radius: 30px;
+  width: 50vw;
+  margin-left: auto;
+}
+
+.qr-page-container {
+  display: flex;
+  gap: 5rem;
+}
+
+.main-button {
+  background-color: var(--main-blue-color);
+  font-size: 16px;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  display: block;
+  border-radius: 0.875rem;
+  border: none;
+  cursor: pointer;
+}

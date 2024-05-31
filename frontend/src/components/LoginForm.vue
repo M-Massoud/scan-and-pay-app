@@ -1,8 +1,8 @@
 <template>
-  <div class="login-form">
-    <div class="login-form__headline">
+  <div class="page-inner-content">
+    <div class="login-form">
       <img src="../../public/assets/flash-arrows.png" alt="arrows-image" />
-      <h1>
+      <h1 class="login-form__headline">
         Hey there!
 
         <br />
@@ -12,37 +12,30 @@
       <form>
         <div class="login-form__number-container">
           <label class="login-form__label">What's your number</label>
-          <input class="login-form__input" />
+          <input class="login-form__input" placeholder="01xxxxxxxxx" />
           <p class="login-form__helper">
             Enter the number linked to your Flash account.
           </p>
         </div>
-        <div class="promotion">
-          <img src="../../public/assets/promotion-icon.svg" alt="promotion-icon" />
-          <p>Get 20% off on your first payment</p>
-        </div>
 
-        <button class="login-form__button">Next</button>
+        <Promotion />
+
+        <button class="login-form__button main-button">Next</button>
       </form>
     </div>
   </div>
 </template>
-<script setup></script>
+
+<script setup>
+import Promotion from './Promotion.vue';
+</script>
 
 <style scoped>
 .login-form {
-  padding: 3.75rem 10rem 0rem 2.5rem;
-  border: 3px solid var(--main-grey-color);
-  border-radius: 30px;
-  width: 50vw;
-  margin-left: auto;
+  padding-right: 40%;
 }
 
 .login-form__headline {
-  margin-bottom: 3.75rem;
-}
-
-.login-form__headline h1 {
   font-weight: bold;
   font-size: 1.5rem;
   margin-top: 1.25rem;
@@ -74,6 +67,10 @@
   max-width: 22rem;
 }
 
+.login-form__input::placeholder {
+  color: #dbdada;
+}
+
 .login-form__input:focus {
   outline-color: var(--accent-color);
 }
@@ -84,31 +81,7 @@
   margin-top: 0.8rem;
 }
 
-.promotion {
-  display: flex;
-  gap: 0.5rem;
-  width: fit-content;
-  background-color: #caf15e3a;
-  padding: 0.625rem;
-  border-radius: 0.375rem 0 0.375rem 0;
-}
-
-.promotion p {
-  color: var(--main-blue-color);
-  font-weight: 600;
-  font-size: 0.875rem;
-}
-
 .login-form__button {
-  background-color: var(--main-blue-color);
-  font-size: 16px;
-  color: #fff;
-  padding: 1rem;
-  width: 100%;
-  display: block;
-  margin-top: 5rem;
-  border-radius: 0.875rem;
-  border: none;
-  cursor: pointer;
+  margin-top: 3rem;
 }
 </style>
