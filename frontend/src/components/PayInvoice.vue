@@ -1,7 +1,7 @@
 <template>
   <div class="page-inner-content qr-page-container">
     <div class="qr-code-content">
-      <img src="../../public/assets/flash-arrows.png" alt="arrows-image" />
+      <img src="../../assets/flash-arrows.png" alt="arrows-image" />
       <h2>Almost there, Palak!</h2>
 
       <p class="qr-code-content__description">
@@ -13,7 +13,7 @@
       <Promotion />
 
       <div class="confirmation-warning">
-        <img src="../../public/assets/warning-icon.svg" alt="warning-icon" />
+        <img src="../../assets/warning-icon.svg" alt="warning-icon" />
         <p>Make sure you paid before confirming</p>
       </div>
 
@@ -21,7 +21,7 @@
     </div>
 
     <div class="qr-code-image">
-      <img src="../../public/assets/QR-Code.png" alt="QR code" />
+      <img src="../../assets/QR-Code.png" alt="QR code" />
     </div>
   </div>
 </template>

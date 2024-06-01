@@ -1,7 +1,7 @@
 <template>
   <div class="page-inner-content qr-page-container unregistered-user-page">
     <div class="qr-code-content">
-      <img src="../../public/assets/flash-arrows.png" alt="arrows-image" />
+      <img src="../../assets/flash-arrows.png" alt="arrows-image" />
       <h2>Hey there!</h2>
 
       <p class="qr-code-content__description">
@@ -16,7 +16,7 @@
     </div>
 
     <div class="qr-code-image">
-      <img src="../../public/assets/QR-Code.png" alt="QR code" />
+      <img src="../../assets/QR-Code.png" alt="QR code" />
     </div>
   </div>
 </template>

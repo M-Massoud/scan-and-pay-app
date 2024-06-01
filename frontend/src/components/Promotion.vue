@@ -1,6 +1,6 @@
 <template>
   <div class="promotion">
-    <img src="../../public/assets/promotion-icon.svg" alt="promotion-icon" />
+    <img src="../../assets/promotion-icon.svg" alt="promotion-icon" />
     <p>Get 20% off on your first payment</p>
   </div>
 </template>

@@ -1,13 +1,13 @@
 <template>
   <div class="page-inner-content">
     <div class="login-form">
-      <img src="../../public/assets/flash-arrows.png" alt="arrows-image" />
+      <img src="../../assets/flash-arrows.png" alt="arrows-image" />
       <h1 class="login-form__headline">
         Hey there!
 
         <br />
 
-        Pay with <img src="../../public/assets/flash-logo.png" alt="flash-logo" />!
+        Pay with <img src="../../assets/flash-logo.png" alt="flash-logo" />!
       </h1>
       <form>
         <div class="login-form__number-container">
@@ -20,7 +20,9 @@
 
         <Promotion />
 
-        <button class="login-form__button main-button">Next</button>
+        <RouterLink to="pay-invoice">
+          <button class="login-form__button main-button">Next</button>
+        </RouterLink>
       </form>
     </div>
   </div>
